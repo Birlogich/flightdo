@@ -1,10 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap');
+
+:root {
+
+  /* Typography */
+  --family-nunito: 'Nunito Sans', sans-serif;
+  --fs-sm: 10px;
+  --fs-md: 14px;
+  --fs-mdbig: 16px;
+  --fs-lg: 32px;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-semi-bold: 700;
+  --fw-bold: 800;
+
+  /* Other */
+  --purple-bg: #605DEC;
+  --light-purple-bg: #F6F6FE;
+  --border: #9997F3;
+
+  /*Text Colors*/
+  --ordinary-text:#27273F;
+  --white-text: #FFFFFF;
+  --purple-text: #605DEC;
+  --grey-text: #6E7491; 
+  --lightgrey-text: #7C8DB0; 
+}
+
+#root {
+  height: 100vh;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  color: var(--ordinary-text);
+  font-family: var(--family-nunito);
+  font-size: var( --fs-mdbig);
+  font-weight: var(--fw-normal);
 }
 
 code {
